@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+ul{
+    padding: 20px 20px;
+}
+
+.navbar ul{
+    text-align: right;
+}
+
+.navbar li{
+    display: inline;
+    padding: 20px;
+}
+
+.enlace-negro{
+    text-decoration: none;
+    color: blue
+}
+
+.racing-club-negro{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*FOOTER*/
+
+.piedepagina {
+    background-color: blue;
+}    
+
+.pelota{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 23px;
+    align-items: center;
+}
+
+
+.logos {
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+}
+
+/*INDEX*/
+
+.section-main {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-image: url("../assets/hinchada.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+@font-face {
+    font-family: racingclub;
+    src: url("../assets/fonts/Say\ Comic.ttf");
+}
+
+h1{
+    font-family: racingclub;
+    padding: 7px 10px;
+}
+
+h1{
+    background-color: rgb(37, 37, 229) ;
+}
+
+
+/*CLASICO*/
+
+.clasico {
+    background-color: rgb(80, 255, 238);
+}
+
+.clasico-mura{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.titulos-de-clasico{
+    background-color: rgb(0, 7, 71);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.texto2-clasico {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.piovi{
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    background-image: url(../assets/piovicabezazo.jpg);
+}
+
+.texto-clasico {
+    background-color: aqua;
+    font-size: 100%;
+}
+
+/*HISTORIA*/
+
+
+.historia-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia {
+    background-color: aqua;
+}
+
+.titulos-de-historia {
+    background-color: rgb(0, 7, 71);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+/*TITULOS*/
+
+.margin-h1-titulos{
+    margin: 0;
+}
+
+
+
+.titulos-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos {
+    background-color: aqua;
+}
+
+
+.titulos-navbar ul{
+    text-align: right;
+    margin: 0;
+}
+
+.titulos-navbar li{
+    display: inline;
+    padding: 20px;
+}
+
+/*JUJGADORES*/
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #ccc;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/*RESPONSIVE*/
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .section-main{
+        font-size: 19px;
+    }
+
+    .piovi{
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px ) {
+    .section-main{
+        font-size: 15px;
+    }
+
+    .piovi{
+        display: none;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .section-main{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .h11{
+        text-align: center;
+    }
+
+    .pelota{
+        padding-left: 85px;
+        text-align: center;
+    }
+
+    .navbar{
+        font-size: 12px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 2.6px;
+    }
+
+    .piovi{
+        display: none;
+    }
+
+    .texto-clasico{
+        font-size: 12px;
+    }
+
+    .texto2-clasico{
+        font-size: 12px;
+    }
+
+    .clasico-mura{
+        display: none;
+    }
+
+    .titulos-de-clasico{
+        font-size: 15px;
+    }
+}
+
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .section-main{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .h11{
+        text-align: center;
+    }
+
+    .navbar{
+        font-size: 11px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 3px;
+    }
+
+    .pelota{
+        padding-left: 65px;
+        text-align: center;
+    }
+
+    .texto-clasico{
+        font-size: 11px;
+    }
+
+    .texto2-clasico{
+        font-size: 11px;
+    }
+
+    .piovi{
+        display: none;
+    }
+    
+    .clasico-mura{
+        display: none;
+    }
+
+    .titulos-de-clasico{
+        font-size: 13px;
+    }
+
+}
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+    .section-main{
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .navbar{
+        font-size: 8px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    .h11{
+        text-align: center;
+    }
+
+    .pelota{
+        padding-left: 50px;
+        text-align: center;
+    }
+
+    .texto-clasico{
+        font-size: 10px;
+    }
+    .texto2-clasico{
+        font-size: 10px;
+        
+    }
+    .piovi{
+        display: none;
+    }
+
+    
+    .clasico-mura{
+        display: none;
+    }
+
+    .titulos-de-clasico{
+        font-size: 11px;
+    }
+
+}
+
+
+
